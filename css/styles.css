@@ -16,11 +16,6 @@ body{
 
 
 
-a{
-    list-style: none;
-
-}
-
 
 
 .header{
@@ -35,20 +30,24 @@ a{
     top: 0;
     padding: 5px;
     height: 10vh;
+    a{
+        max-width: 20%;
+    }
     .imagenLogo{
         margin-left: 50px;
-        width: 15%;
+        width: 30%;
     }
     nav{
         margin-right: 50px;
-
+        display: flex;
+        flex-direction: row;
         ul{
             list-style: none;
             padding: 5px;
             li{
                 display: inline-block;
                 justify-content: space-evenly;
-                margin-right: 25px;
+                margin-right: 10px ;
                 img{
                     width: 30px;
                 }
@@ -61,7 +60,53 @@ a{
     }
     
 }
+@media screen and (max-width:768px) {
+    .estiloPrincipal{
+        background-position-x:center;
+        .titulo{
+            font-size: 1.4rem;
+        }
+        .subtitulo{
+            font-size: 0.4rem;
+        }
+    }
 
+    .header{
+        
+        .imagenLogo{
+            margin-left: 10px;
+            width: 30%;
+            min-width: 20%;
+        }
+        list-style: none;
+
+        nav{
+            margin-right: 20px;
+    
+            ul{
+                list-style: none;
+                padding: 2px;
+                display: flex;
+
+                li{
+                    font-size: 1rem;
+                    justify-content: space-evenly;
+                    margin-right: 5px;
+                    img{
+                        width: 30px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: snow;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
 .estiloPrincipal{
     height:70vh ;
     font-size: 1.9em;
@@ -409,5 +454,3 @@ a{
     }
 }
 
-
---  RESPONSIVE PARA CELULARES ->
