@@ -13,11 +13,14 @@ body{
     font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
 
-    
+
+a{
+    list-style: none;
 
 }
+
+
 
 .header{
     box-sizing: content-box;
@@ -69,6 +72,8 @@ body{
             width: 30%;
             min-width: 20%;
         }
+        list-style: none;
+
         nav{
             margin-right: 20px;
     
