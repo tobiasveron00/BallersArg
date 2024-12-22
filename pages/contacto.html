@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="shortcut icon " href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
-
     </head>
 
     <body>
@@ -19,9 +18,9 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="../index.html#nosotros">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
                 </ul>
             </nav>    
         </header>
@@ -41,40 +40,37 @@
                         <p>Avenida Corrientes 3247, Lavalle 3120</p>
                    </div>
                    <div class="contactoInfo">
-                    <i class="fa-solid fa-envelope fa-l"></i>
-                    <p>ballersarg@gmail.com</p>
-               </div>
+                        <i class="fa-solid fa-envelope fa-l"></i>
+                        <p>ballersarg@gmail.com</p>
+                    </div>
                 </div>
 
                 <div class="formulario">
-                    <form action="https://formspree.io/f/xpwzrjnq" method="POST">
+                    <!-- action="https://formspree.io/f/xpwzrjnq" -->
+                    <form action="https://formspree.io/f/xpwzrjnq" method="POST" id ="miFormulario">
                         <div class="formDato">
-                            <label for="nombre">
-                                Nombre:
-                            </label>
-                            <input type="text"  required name="Nombre" class="formBarra">
-                            
+                            <label for="nombre"> Nombre:</label>
+                            <input type="text"  name="nombre" id="nombre" class="formBarra">
+                            <small class="textoError textoErrorMostrar" id="errorNombre">El nombre es obligatorio</small>
                         </div>  
                         <div class="formDato">
-                            <label for="email">
-                                Email:
-                            </label>
-                            <input type="email" id="email" required name="email" class="formBarra">
+                            <label for="email"> Email:</label>
+                            <input type="email" id="email"  name="email" class="formBarra">
+                            <small class="textoError textoErrorMostrar" id="errorEmail">Ingrese un mail valido</small>
                         </div> 
                         <div class="formDato">
-                            <label for="numero">
-                                Numero:
-                            </label>
-                            <input type="number"  required name="numero" class="formBarra">
+                            <label for="numero"> Numero:</label>
+                            <input type="number"  name="numero" id="numero" class="formBarra">
+                            <small class="textoError textoErrorMostrar" id="errorNumero">El numero es obligatorio</small>
                         </div> 
                         <div class="formDato">
-                            <label for="mensaje">
-                            Mensaje:
-                            </label>
-                            <textarea name="message"  class="formBarra" style="height: 475px" required></textarea>
+                            <label for="mensaje"> Mensaje:</label>
+                            <textarea name="message"  class="formBarra" style="height: 425px" id="mensaje" ></textarea>
+                            <small class="textoError textoErrorMostrar" id="errorMensaje">El mensaje debe tener al menos 10 caracteres.</small>
+
                         </div>
                         <div>
-                            <button type="submit" style="height:30px;width: 50px; " >Enviar</button>
+                            <input style="height:30px; width: 50px;" type="submit" value="Enviar">
                         </div>
                     </form>
                 </div>
@@ -113,5 +109,6 @@
                 </div>
             </nav>
         </footer>
+        <script src="../js/validacion.js"></script>
     </body>
 </html>

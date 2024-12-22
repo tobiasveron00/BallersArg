@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="shortcut icon " href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     </head>
 
@@ -19,9 +20,9 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="../index.html#nosotros">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
                 </ul>
             </nav>    
         </header>
@@ -44,47 +45,70 @@
                     <div class="productoItem">
                         <p class=".productoItemTexto">Camiseta Chicago Bulls</p>
                         <img src="../assets/images/camiseta-bulls.jpg" alt="Camiseta de los bulls">
+                        <h4> $23,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Camiseta de los Bulls" data-precio="23000.00">Agregar Carrito</a>
 
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Camiseta Orlando Magic</p>
                         <img src="../assets/images/Camiseta-orlando.jpg" alt=" Camiseta de los Orlando Magic">
+                        <h4> $24,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Camiseta de los Orlando Magic" data-precio="24000.00">Agregar Carrito</a>
+
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Camiseta Miami Heat</p>
                         <img src="../assets/images/camiseta-miami-heat.jpg" alt="Camiseta de los Miami Heat">
+                        <h4> $25,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Camiseta de los Miami Heat" data-precio="25000.00">Agregar Carrito</a>
+
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Short Grizzlies</p>
                         <img src="../assets/images/Pantalon-corto-Retro-Memphis-Grizzlies.jpg" alt="Pantalon corto Grizzlies">
+                        <h4> $17,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Short Grizzlies" data-precio="17000.00">Agregar Carrito</a>
+
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Short Suns</p>
                         <img src="../assets/images/pantalon-corto-suns.jpeg" alt="Pantalon corto Suns">
+                        <h4> $18,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Short Suns" data-precio="18000.00">Agregar Carrito</a>
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Short Chicago Bulls</p>
                         <img src="../assets/images/pantalon-corto-bulls.jpg" alt="Pantalon corto Bulls">
+                        <h4> $16,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Short Bulls" data-precio="16000.00">Agregar Carrito</a>
+
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Nike Ja 1</p>
                         <img src="../assets/images/ja1.png" alt="zapatillas Nike ja 1">
+                        <h4> $235,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Zapatillas Ja 1" data-precio="235000.00">Agregar Carrito</a>
+
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Nike GT Jump</p>
                         <img src="../assets/images/nike-gt-jump.png" alt="zapatillas nike gt jump">
+                        <h4> $195,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Zapatillas Gt Jump" data-precio="195000.00">Agregar Carrito</a>
                     </div>
 
                     <div class="productoItem">
                         <p class=".productoItemTexto">Nike GT Cut</p>
                         <img src="../assets/images/gt-cut.png" alt="Zapatillas nike gt cut">
+                        <h4> $215,000</h4>
+                        <a id="productoA" href="#" class="btn btn-success btn-agregar" data-nombre="Zapatillas Gt Cut" data-precio="215000.00">Agregar Carrito</a>
                     </div>
                 </div>
 
@@ -121,5 +145,6 @@
                 </div>
             </nav>
         </footer>
+    <script src="../js/agregar_carrito.js"></script>
     </body>
 </html>
